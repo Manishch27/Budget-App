@@ -3,6 +3,8 @@ import Error from './Components/Error';
 import Dashboard, { dashboardLoader } from './Components/Dashboard';
 import Main, { mainLoader } from './layouts/main';
 import { logoutAction } from './actions/logout';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import {
   createBrowserRouter,
@@ -38,7 +40,10 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
+    <>
     <RouterProvider router={router} />
+    <ToastContainer />
+    </>
   )
 }
 

@@ -8,5 +8,6 @@ export const fetchData = (key)=>{
 // delete the data from local storage
 
 export const deleteItem = (key)=>{
+
     return localStorage.removeItem(key);
 }
