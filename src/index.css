@@ -41,7 +41,7 @@ svg {
   --space-xs: 8px;
   --space-sm: 16px;
   --space-md: 24px;
-  --space-lg: 32px;
+  --space-lg: 75px;
   --space-xl: 40px;
   --content-sm: 40ch;
   --content: 60ch;
@@ -386,6 +386,7 @@ select {
   -ms-flex-pack: center;
   justify-content: center;
   gap: var(--space-lg);
+  width: 100%;
 }
 
 .intro div {

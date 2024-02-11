@@ -1,6 +1,6 @@
 import React from 'react';
 import Error from './Components/Error';
-import Dashboard, { dashboardLoader } from './Components/Dashboard';
+import Dashboard, { dashboardAction, dashboardLoader } from './Components/Dashboard';
 import Main, { mainLoader } from './layouts/main';
 import { logoutAction } from './actions/logout';
 import { ToastContainer, toast } from 'react-toastify';
@@ -22,6 +22,7 @@ const router = createBrowserRouter([
         index: true,
         element:<Dashboard/>,
         loader: dashboardLoader,
+        action: dashboardAction,
         errorElement: <Error/>
       },
 
